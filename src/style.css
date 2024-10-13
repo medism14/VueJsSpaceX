@@ -1,4 +1,9 @@
-/* ./src/index.css */
+/**
+ * ./src/index.css
+ *
+ * @format
+ */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,8 +13,8 @@
   --line-height: 1.5;
   --font-weight: 400;
   --color-text: #242424;
-  --color-primary: #D6DEE5;
-  --color-secondary: #FFFFFF;
+  --color-primary: #d6dee5;
+  --color-secondary: #ffffff;
   --color-tertiary: #264e74;
   --color-tertiary-accent: #386a98;
 }
@@ -26,4 +31,16 @@ body {
   justify-content: space-between;
   min-height: 100vh;
   width: 100%;
+}
+
+@media (max-width: 1024px) {
+  body {
+    padding: 0px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0px 20px;
+  }
 }
